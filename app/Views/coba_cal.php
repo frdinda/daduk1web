@@ -31,7 +31,16 @@
     <script>
         // Persiapan JQuery
         $(document).ready(function() {
-
+            var calendar = $('#calendar').fullCalendar({
+                // izinkan tabel bisa di edit
+                editable: true,
+                // atur header kalendar
+                header: {
+                    left: 'prev, next today',
+                    center: 'title',
+                    right: 'month, agendaWeek, agendaDay'
+                }
+            });
         })
     </script>
 
